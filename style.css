@@ -1,0 +1,19 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --primary-color: #283441;
+   --secondary-color: #EFEFEF;
+   --teritary-color: #0B539C;
+   --bg-primary: #FDF9ED;
+   --bg-secondary: #F9F9F9;
+   --bg-teritary: #FFFFFF;
+}
+
+.header {
+   background: var(--primary-color);
+   max-width: 100vw;
+}
