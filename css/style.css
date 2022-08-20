@@ -14,8 +14,14 @@
    --semi-bold: 550;
 }
 
+<<<<<<< HEAD:css/style.css
 html {
    scroll-behavior: smooth;
+=======
+body {
+   background-color: var(--bg-primary);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> f08c6357cb231d9f5401e90bfcbf3a66f2e46f41:style.css
 }
 
 body {
@@ -232,8 +238,13 @@ body {
 
 
 .header_body .content_body .content_img img {
+<<<<<<< HEAD:css/style.css
    width: 59rem;
    height: 44.5rem;
+=======
+   width: 64.3rem;
+   height: 45.4rem;
+>>>>>>> f08c6357cb231d9f5401e90bfcbf3a66f2e46f41:style.css
    position: relative;
    top: 1.3rem;
    right: -90px;
@@ -412,7 +423,11 @@ body {
 .cards .card h4 {
    margin: 10px 0;
    font-weight: var(--semi-bold);
+<<<<<<< HEAD:css/style.css
    font-size: 1.5rem;
+=======
+   font-size: 1.2rem;
+>>>>>>> f08c6357cb231d9f5401e90bfcbf3a66f2e46f41:style.css
 }
 
 .cards .card p {
