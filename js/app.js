@@ -137,14 +137,14 @@ fade_ins.forEach(fade_in => {
 
 // Toggle menu
 // Targetting elements
-const menu = document.querySelector('#menu_btn');
-const close_btn = document.querySelector('#close_btn');
+const menu = document.querySelector('.menu_btn');
+const close_btn = document.querySelector('.close_btn');
 const responsive_nav_menu = document.querySelector('.responsive_nav_menu');
 
 // Toggle menu
 menu.addEventListener('click', () => {
    responsive_nav_menu.classList.add('display_nav')
-   close_btn.style.display = 'inline-block';
+   close_btn.style.display = 'block';
    menu.style.display = 'none';
 });
 
@@ -152,7 +152,7 @@ menu.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
    responsive_nav_menu.classList.remove('display_nav')
    close_btn.style.display = 'none';
-   menu.style.display = 'inline-block';
+   menu.style.display = 'block';
 })
 
 

@@ -8,6 +8,9 @@
    <link rel="stylesheet" href="../css/style.css">
    <!-- Swiper Js CSS CDN -->
    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- Script -->
    <script defer src="../js/app.js"></script>
    <title>Construction</title>
@@ -29,15 +32,20 @@
                   <li><a href="#shop">Shop</a></li>
                </div>
                <!-- Cart -->
-               <li class="cart"><a href="../pages/cart.html"><img src="../imgs/shopping_cart.png" alt="cart"></a><sup class="incart">0</sup></li>
+               <li class="cart">
+                  <a href="../pages/cart.html">
+                     <i class="fa-solid fa-cart-shopping icon"></i>
+                  </a>
+                  <sup class="incart">0</sup>
+               </li>
+               <div class="menu_btn">
+                  <i class="fa-solid fa-bars icon"></i>
+               </div>
             </ul>
-            <div id="menu_btn">
-               <img src="../imgs/Icon-menu.png" alt="menu_bar">
-            </div>
-            <div id="close_btn">
-               <img src="../imgs/cancel.png" alt="close_btn">
-            </div>
          </nav>
+      </div>
+      <div class="close_btn">
+         <i class="fa-solid fa-circle-xmark icon"></i>
       </div>
       <ul class="responsive_nav_menu">
          <li><a href="#about">About</a></li>
@@ -50,7 +58,7 @@
             <ul>
                <a href=""><img src="../imgs/fb.png" alt="facebook"></a>
                <a href=""><img src="../imgs/ig.png" alt="instagram"></a>
-               <a href=""><img src="../imgs/tw.png" alt="twiter"></a>
+               <a href=""><img src="../imgs/tw.png" alt="twitter"></a>
                <a href=""><img src="../imgs/github.png" alt="github"></a>
             </ul>
          </div>
@@ -71,17 +79,19 @@
          </div>
       </div>
       <div class="header_footer">
-         <div class="header_footer_text">
-            <h2>150</h2>
-            <p>Major Clients</p>
-         </div>
-         <div class="header_footer_text">
-            <h2>360</h2>
-            <p>Projects</p>
-         </div>
-         <div class="header_footer_text">
-            <h2>600</h2>
-            <p>Happy Clients</p>
+         <div class="header_footer_container">
+            <div class="header_footer_text">
+               <h2>150</h2>
+               <p>Major Clients</p>
+            </div>
+            <div class="header_footer_text">
+               <h2>360</h2>
+               <p>Projects</p>
+            </div>
+            <div class="header_footer_text">
+               <h2>600</h2>
+               <p>Happy Clients</p>
+            </div>
          </div>
       </div>
    </header>
@@ -500,7 +510,7 @@
    </main>
    <!-- End Of Main -->
    <footer class="footer">
-      <p>Copyrights: Construction the company </p>
+      <p>&copy;copyrights :: Mic__Dev.com ~ Construction the company </p>
    </footer>
 
    <!-- Gsap 3 script -->
@@ -555,6 +565,11 @@
          prevEl: ".swiper-button-prev",
       },
       breakpoints: {
+         600: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            slidesPerGroup: 2,
+         },
          1024: {
             slidesPerView: 2,
             spaceBetween: 15,
