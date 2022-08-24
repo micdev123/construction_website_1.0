@@ -210,64 +210,17 @@ function loadProducts() {
    shop_container.innerHTML = products;
 
    // Getting products in localstorage
-   let getProductInCart = JSON.parse(localStorage.getItem('products')) || [];
+   // let getProductInCart = JSON.parse(localStorage.getItem('products')) || [];
    // console.log(getProductInCart);
-   document.querySelector('.incart').innerText = getProductInCart.reduce((a, c) => a + c.qty, 0)
+   // document.querySelector('.incart').innerText = getProductInCart.reduce((a, c) => a + c.qty, 0)
    
 }
 
-function addTocart() {
-   // Getting products in localstorage
-   let getProductInCart = JSON.parse(localStorage.getItem('products')) || [];
-   // console.log(products);
-   
-   let products = shop_container.querySelectorAll('.product');
-   products.forEach(product => {
-      const cart_btn = product.querySelector('.cartBtn');
-      cart_btn.addEventListener('click', (e) => {
-         const product_name = e.target.parentElement.parentElement.querySelector(".product_name").innerText;
-
-         // Looping through the data collection
-         data.forEach(item => {
-            if(item.name === product_name) {
-               console.log('yes', product_name);
-
-               // Creating an object model
-               let productInCart = {
-                  product_id: item._id,
-                  productImg: item.img,
-                  productName: item.name,
-                  productPrice: item.price,
-                  countInStock: item.inStock,
-                  qty: 1,
-               }
-
-               // console.log(productInCart);
-
-               // If product is already in cart don't push it again in cart
-               let isInCart = getProductInCart.filter(product => product.productName === productInCart.productName).length > 0;
-
-               if(!isInCart) {
-                  getProductInCart.push(productInCart);
-               }
-
-               // set localstorage
-               localStorage.setItem('products', JSON.stringify(getProductInCart));
-               
-            }
-         })
-         document.querySelector('.incart').innerText = getProductInCart.reduce((a, c) => a + c.qty, 0)
-         
-      })
-      // console.log(cart_btn);
-   }) 
-   
-}
 
 
 // Calling Functions
 loadProducts();
-addTocart();
+// addTocart();
 
 
 
