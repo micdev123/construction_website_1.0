@@ -170,12 +170,13 @@ body {
 }
 
 .header_body .socials ul a {
-   margin-bottom: 10px;
+   margin-bottom: 20px;
+   color: #e4e4e4;
 }
 
 
-.header_body .socials ul a img{
-   width: 1.5rem;
+.header_body .socials ul a .icon{
+   font-size: 1.2rem;
 }
 
 
@@ -375,8 +376,9 @@ body {
    margin-right: initial;
 }
 
-.swiper_btns img {
-   width: 1.8rem;
+.swiper_btns .icon {
+   font-size: 1.5rem;
+   color: #283441;
 }
 
 
